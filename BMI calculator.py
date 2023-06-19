@@ -1,9 +1,7 @@
-height = input("Please enter ur height(cm)\n")
-weight = input("Please enter ur weight(kg)\n")
+height = float(input("Please enter ur height(cm)\n"))
+weight = float(input("Please enter ur weight(kg)\n"))
 
+height /= 100
 bmi = (weight/(height*height))
 
-print(input("Please enter ur height(cm)\n"))
-print(input("Please enter ur weight(kg)\n"))
-
-print(f"Your BMI is: {bmi}")
+print(f"Your BMI is: {round(bmi ,1)}")
